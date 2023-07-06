@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+        }
+        h1{
+            font-weight: bold; /* Makes the labels bold */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        form {
+            border: 1px solid rgb(3, 5, 9);
+            width: 400px;
+            height: auto;
+            padding: 20px;
+            position: absolute;
+            top: 300px;
+            left: 550px;
+        }
+
+        input {
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            margin-bottom: 10px; /* Adds space between input boxes */
+            width: 250px /* Sets the input boxes to occupy full width */
+        }
+        button{
+            border-radius: 4px;
+        }
+        
+        label {
+            font-weight: bold; /* Makes the labels bold */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body><center>
+    <h1>Content Adding Form</h1>
+    <form method="post" action="/">
+        <label>Title : </label>
+        <input type="text" name="title"><br>
+        <label>Content : </label>
+        <input type="text" name="content"><br>
+        <label>Author : </label>
+        <input type="text" name="author"><br>
+        
+        <button>Submit</button>
+    </form>
+
+    
+    
+</center>
+    
+</body>
+</html>

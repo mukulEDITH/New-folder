@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #d3cce3, #e9e4f0); 
+        }
+        button{
+            border: 1px  solid black;
+            border-radius: 3px;
+            width: 400x;
+            height: 300x;
+        }
+        li{
+            
+  list-style-type: none;
+
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <center><h1>Show Data</h1>
+    
+    <ul>
+        <!--   -->
+      <%  for(let item of items){%>
+             <li><%= item.title %></li>
+             <button>
+                <a href="/show/<%= item._id %>/edit">Edit</a>
+             </button>
+             
+            
+                <form action="/show/<%= item._id %>?_method=DELETE" method="post">
+                   <button>Delete</button>
+                </form>
+             
+        <%}%>
+    </ul>
+
+    <p>by @ mukulkaushalll</p>
+</center>
+</body>
+</html>
